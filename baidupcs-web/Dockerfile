@@ -3,7 +3,7 @@ FROM alpine:3.10
 ARG BaiduPCSGo_VER=3.7.0
 ARG  S6_VER=1.22.1.0
 
-COPY  root /
+COPY  ./root /
 
 RUN apk add --no-cache bash  \
 &&  rm -rf /var/cache/apk/*  \
